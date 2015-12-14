@@ -1,0 +1,14 @@
+{{ "<!-- CONTACT -->" | safeHTML }}
+<div class="container">
+    <div class="row">
+    	<div class="col-lg-12 text-center">
+			<footer id="footer">
+			    <p class="small">{{ with .Site.Params.copyright }}
+			        {{ . | markdownify }}
+			    {{ else }}
+			        © Copyright {{.Now.Format "2006"}} {{ .Site.Params.name }}
+			    {{ end }} | <a href="/impressum" target="_self">Impressum</a></p>
+			</footer>
+		</div>
+	</div>
+</div>
