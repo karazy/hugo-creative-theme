@@ -5,7 +5,18 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">{{ with .Site.Params.pricing.headline }}{{ . }}{{ end }}</h2>
                 <hr class="light">
-                <p class="text-faded">{{ with .Site.Params.pricing.description }}{{ . | markdownify }}{{ end }}</p>
+                
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <h3>{{ with .Site.Params.pricing.free.title }}{{ . }}{{ end }}</h3>
+                        <p class="text-faded">{{ with .Site.Params.pricing.free.description }}{{ . | markdownify }}{{ end }}</p>    
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <h3>{{ with .Site.Params.pricing.premium.title }}{{ . }}{{ end }}</h3>
+                        <p class="text-faded">{{ with .Site.Params.pricing.premium.description }}{{ . | markdownify }}{{ end }}</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
