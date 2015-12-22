@@ -21,7 +21,7 @@
             <ul class="nav navbar-nav navbar-right">
                 {{ range .Site.Params.navigation.links }}
                     <li>
-                        <a class="page-scroll" href="/#{{ .href }}">{{ .title }}</a>
+                        <a class="page-scroll" href="#{{ .href }}">{{ .title }}</a>
                     </li>          
                 {{ end }}
             </ul>
